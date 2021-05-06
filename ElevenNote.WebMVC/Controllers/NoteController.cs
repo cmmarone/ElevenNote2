@@ -12,7 +12,7 @@ namespace ElevenNote.WebMVC.Controllers
     [Authorize]
     public class NoteController : Controller
     {
-        // GET: Note
+        // GET: Note/Index
         public ActionResult Index()
         {
             var service = CreateNoteService();

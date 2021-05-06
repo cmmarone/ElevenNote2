@@ -72,6 +72,14 @@
     <Compile Include="Migrations\202105060046472_addedFK.Designer.cs">
       <DependentUpon>202105060046472_addedFK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105060137142_alteredCategoryEntity.cs" />
+    <Compile Include="Migrations\202105060137142_alteredCategoryEntity.Designer.cs">
+      <DependentUpon>202105060137142_alteredCategoryEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105060148319_addedGuidToCategory.cs" />
+    <Compile Include="Migrations\202105060148319_addedGuidToCategory.Designer.cs">
+      <DependentUpon>202105060148319_addedGuidToCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105060046472_addedFK.resx">
       <DependentUpon>202105060046472_addedFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105060137142_alteredCategoryEntity.resx">
+      <DependentUpon>202105060137142_alteredCategoryEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105060148319_addedGuidToCategory.resx">
+      <DependentUpon>202105060148319_addedGuidToCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

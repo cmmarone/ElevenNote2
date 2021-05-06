@@ -15,7 +15,10 @@ namespace ElevenNote.Data
         [Required]
         public string Name { get; set; }
 
+        [Required]
+        public Guid OwnerId { get; set; }
+
         // navigation properties
-        public virtual ICollection<Note> Notes { get; set; }
+        public virtual ICollection<Note> Notes { get; set; } = new List<Note>();
     }
 }
