@@ -56,7 +56,7 @@ namespace ElevenNote.Services
                 {
                     CategoryId = entity.CategoryId,
                     Name = entity.Name,
-                    Notes = ConvertListItem(entity.Notes)
+                    Notes = entity.Notes
                 };
             }
         }
@@ -83,20 +83,6 @@ namespace ElevenNote.Services
 
                 return ctx.SaveChanges() == 1;
             }
-        }
-
-        // Helpers
-        private ICollection<NoteOfCategory> ConvertListItem(ICollection<Note> noteEntities)
-        {
-            var listOfModels = new List<NoteOfCategory>();
-            foreach (Note note in noteEntities)
-            {
-                var model = new NoteOfCategory();
-                model.Title = note.Title;
-                model.CreatedUtc = note.CreatedUtc;
-                listOfModels.Add(model);
-            }
-            return listOfModels;
         }
     }
 }
