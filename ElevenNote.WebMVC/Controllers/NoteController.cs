@@ -125,7 +125,5 @@ namespace ElevenNote.WebMVC.Controllers
             var service = new NoteService(userId);
             return service;
         }
-
-
     }
 }

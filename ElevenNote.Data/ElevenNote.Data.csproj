@@ -54,13 +54,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202105051526326_InitialCreate.cs" />
+    <Compile Include="Migrations\202105051526326_InitialCreate.Designer.cs">
+      <DependentUpon>202105051526326_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105060039448_beganCategoryNoFK.cs" />
+    <Compile Include="Migrations\202105060039448_beganCategoryNoFK.Designer.cs">
+      <DependentUpon>202105060039448_beganCategoryNoFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105060044577_addedCategoryDbSet.cs" />
+    <Compile Include="Migrations\202105060044577_addedCategoryDbSet.Designer.cs">
+      <DependentUpon>202105060044577_addedCategoryDbSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105060046472_addedFK.cs" />
+    <Compile Include="Migrations\202105060046472_addedFK.Designer.cs">
+      <DependentUpon>202105060046472_addedFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105051526326_InitialCreate.resx">
+      <DependentUpon>202105051526326_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105060039448_beganCategoryNoFK.resx">
+      <DependentUpon>202105060039448_beganCategoryNoFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105060044577_addedCategoryDbSet.resx">
+      <DependentUpon>202105060044577_addedCategoryDbSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105060046472_addedFK.resx">
+      <DependentUpon>202105060046472_addedFK.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
