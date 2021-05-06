@@ -15,6 +15,7 @@ namespace ElevenNote.Models
 
         public string Name { get; set; }
 
+        [UIHint("ICollectionOfNoteOfCategory")]
         public virtual ICollection<NoteOfCategory> Notes { get; set; }
     }
 }
