@@ -46,7 +46,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // GET: Note/Details
+        // GET: Note/Details/{id}
         public ActionResult Details(int id)
         {
             var svc = CreateNoteService();
@@ -55,7 +55,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // GET: Note/Edit
+        // GET: Note/Edit/{id}
         public ActionResult Edit(int id)
         {
             var service = CreateNoteService();
@@ -63,13 +63,14 @@ namespace ElevenNote.WebMVC.Controllers
             var model = new NoteEdit
             {
                 NoteId = detail.NoteId,
+                CategoryId = detail.CategoryId,
                 Title = detail.Title,
                 Content = detail.Content
             };
             return View(model);
         }
 
-        // POST: Note/Edit
+        // POST: Note/Edit/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, NoteEdit model)
@@ -94,7 +95,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // GET: Note/Delete
+        // GET: Note/Delete/{id}
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {
@@ -104,7 +105,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // POST: Note/Delete
+        // POST: Note/Delete/{id}
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]

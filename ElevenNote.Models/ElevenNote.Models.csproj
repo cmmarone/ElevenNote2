@@ -62,6 +62,7 @@
     <Compile Include="NoteDetail.cs" />
     <Compile Include="NoteEdit.cs" />
     <Compile Include="NoteListItem.cs" />
+    <Compile Include="NoteOfCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

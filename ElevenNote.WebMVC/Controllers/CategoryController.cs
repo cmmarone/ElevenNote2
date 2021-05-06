@@ -46,7 +46,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // GET: Category/Details
+        // GET: Category/Details/{id}
         public ActionResult Details(int id)
         {
             var svc = CreateCategoryService();
@@ -55,7 +55,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // GET: Category/Edit
+        // GET: Category/Edit/{id}
         public ActionResult Edit(int id)
         {
             var service = CreateCategoryService();
@@ -68,7 +68,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // POST: Category/Edit
+        // POST: Category/Edit/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, CategoryEdit model)
@@ -93,7 +93,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // GET: Category/Delete
+        // GET: Category/Delete/{id}
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {
@@ -103,7 +103,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
-        // POST: Category/Delete
+        // POST: Category/Delete{id}
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
